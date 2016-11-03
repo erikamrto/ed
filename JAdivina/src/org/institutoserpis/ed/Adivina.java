@@ -12,24 +12,25 @@ public class Adivina {
 		int numeroAleatorio = random.nextInt(1000) + 1;
 		System.out.println("Tengo un numero entre 1 y 1000. Adivina...");
 		System.out.println("numeroAleatorio=" + numeroAleatorio);
-		
 		Scanner scanner = new Scanner(System.in);
-		int numero;
+		boolean acertado;
+		int contadorIntentos = 0;
 		do {
-			System.out.print("Introduce el número: ");
+			contadorIntentos++;
+			System.out.printf("Introduce el número (intento nº %d): ", contadorIntentos);
 			String line = scanner.nextLine();
-			numero = Integer.parseInt(line);
+			int numero = Integer.parseInt(line);
 			//damos pista al usuario
-			
 			if (numero < numeroAleatorio) {
 				System.out.println("El numero escondido es mayor.");
 			}
-			else if(numero > numeroAleatorio){
+			if(numero > numeroAleatorio){
 				System.out.println("El numero escondido es menor.");
 			}
+			acertado = numero == numeroAleatorio;
 				
-		} while (numero != numeroAleatorio);
-		System.out.println("Muy bien. Has acertado");
+		} while (!acertado);
+		System.out.printf("Muy bien. Has acertado (al intento nº %d).\n", contadorIntentos);
 	
 	}
 
