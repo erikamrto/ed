@@ -19,4 +19,10 @@ public class VectorTest {
 	public void indexOfEmpty() {
 		assertEquals(-1, Vector.indexOf(new int[]{}, 123));
 	}
+	@Test
+	public void min(){
+		assertEquals(4, Vector.min(new int[]{4, 14, 7, 9, 12}));
+		assertEquals(7, Vector.min(new int[]{13, 14, 7, 9, 12}));
+		assertEquals(2, Vector.min(new int[]{4, 14, 7, 9, 2}));
+	}
 }
