@@ -30,7 +30,7 @@ public class Adivina {
 			acertado = numero == numeroAleatorio;
 				
 		} while (!acertado);
-		System.out.printf("Muy bien. Has acertado (al intento nº %d).\n", contadorIntentos);
+		System.out.printf("Muy bien, has acertado (al intento nº %d).\n", contadorIntentos);
 	
 	}
 
