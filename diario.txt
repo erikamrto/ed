@@ -1,0 +1,8 @@
+20170119 erikamrto
+Instalados en Ubuntu 14.04:
+ monodevelop
+ monodevelop-nunit
+ monodevelop-versioncontrol
+ monodevelop-browser
+ monodevelop-gtk2.0-manual
+ monodevelop-nunit-manual
