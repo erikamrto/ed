@@ -1,8 +1,8 @@
 using System;
 
-namespace CHolaMundo
+namespace Org.InstitutoSerpis.ED
 {
-	class MainClass
+	class HolaMundo
 	{
 		public static void Main (string[] args)
 		{
